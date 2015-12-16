@@ -9,11 +9,11 @@ import android.bluetooth.BluetoothProfile;
 import android.content.Context;
 import android.os.Handler;
 
-import com.robotpajamas.blueteeth.Callback.onConnection;
-import com.robotpajamas.blueteeth.Callback.onCharacteristicRead;
-import com.robotpajamas.blueteeth.Callback.onScanCompleted;
 import com.robotpajamas.blueteeth.Callback.ServicesDiscoveredCallback;
+import com.robotpajamas.blueteeth.Callback.onCharacteristicRead;
 import com.robotpajamas.blueteeth.Callback.onCharacteristicWrite;
+import com.robotpajamas.blueteeth.Callback.onConnection;
+import com.robotpajamas.blueteeth.Callback.onScanCompleted;
 import com.robotpajamas.blueteeth.Callback.onScanResponse;
 
 import java.util.ArrayList;
