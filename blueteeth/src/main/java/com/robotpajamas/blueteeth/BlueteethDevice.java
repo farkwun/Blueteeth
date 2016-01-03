@@ -13,13 +13,14 @@ import com.robotpajamas.blueteeth.Callback.OnCharacteristicReadListener;
 import com.robotpajamas.blueteeth.Callback.OnCharacteristicWriteListener;
 import com.robotpajamas.blueteeth.Callback.OnConnectionChangedListener;
 import com.robotpajamas.blueteeth.Callback.OnServicesDiscoveredListener;
+import com.robotpajamas.blueteeth.MockBlueteeth.MockBluetoothDevice;
 
 import java.util.UUID;
 
 import timber.log.Timber;
 
 public class BlueteethDevice {
-    private final BluetoothDevice mBluetoothDevice;
+    private final MockBluetoothDevice mBluetoothDevice;
 
     @Nullable
     private BluetoothGatt mBluetoothGatt;
@@ -75,11 +76,11 @@ public class BlueteethDevice {
         return mIsConnected;
     }
 
-    public BluetoothDevice getBluetoothDevice() {
+    public MockBluetoothDevice getBluetoothDevice() {
         return mBluetoothDevice;
     }
 
-    BlueteethDevice(BluetoothDevice device) {
+    BlueteethDevice(MockBluetoothDevice device) {
         mBluetoothDevice = device;
         mName = device.getName();
         mMacAddress = device.getAddress();
