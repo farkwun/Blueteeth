@@ -79,7 +79,7 @@ public class BlueteethManager {
 
     private LogLevel mLogLevel = LogLevel.None;
 
-    BlueteethManager(Context applicationContext) {
+    protected BlueteethManager(Context applicationContext) {
         // Grab the application context in case an activity context was passed in
         Context context = applicationContext.getApplicationContext();
 
