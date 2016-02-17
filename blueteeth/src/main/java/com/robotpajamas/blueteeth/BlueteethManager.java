@@ -34,7 +34,7 @@ public class BlueteethManager {
      * @return List of all the scanned for devices
      */
     @NonNull
-    public List<BlueteethDevice> getPeripherals() {
+    public List<? extends BlueteethDevice> getPeripherals() {
         return mScannedPeripherals;
     }
 
